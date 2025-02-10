@@ -9,7 +9,7 @@ const App = () => {
   const getMovieInfo = async (movie) => {
     try {
       const myapiKey = process.env.REACT_APP_API_KEY; // Access API key from .env
-      const url = `http://www.omdbapi.com/?apikey=${myapiKey}&t=${movie}`;
+      const url = `https://www.omdbapi.com/?apikey=${myapiKey}&t=${movie}`;
       const response = await fetch(url);
 
       if (!response.ok) {
